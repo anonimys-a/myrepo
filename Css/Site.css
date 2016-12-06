@@ -520,7 +520,17 @@ footer{
         margin-top: 12px;
       }
 
+/* style for contact us page */
+.send-email-info-message {
+    margin-top: 200px !important;
+    margin-bottom: 196px !important;
+    margin-left: 68px !important;
+    color: white!important;
+}
 
+.fs-numbers {
+	display: none;
+}
 
 /* Footer Right */
 /*

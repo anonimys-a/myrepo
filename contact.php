@@ -58,7 +58,7 @@
 	 		// at this point we know that `useremail` was passed as part of the request
 	 		
 	 		//Email information
-	 		$recipient = "slagjana.karafiljkova@gmail.com";
+	 		$recipient = "example@example.com";
 			$subject = stripslashes($_POST['subject']);
 			$from = stripslashes($_POST['username']);
 			$email = stripslashes($_POST['useremail']);

@@ -47,10 +47,12 @@
 
 	grid3D.prototype._initEvents = function() {
 		var self = this;
+		var dotNav = document.getElementById('dot-nav');
 		
 		// open the content element when clicking on the main grid items
 		this.gridItems.forEach( function( item, idx ) {
 			item.addEventListener( 'click', function() {
+				dotNav.style.visibility = 'hidden';
 				self._showContent( idx );
 			} );
 		} );
@@ -58,6 +60,7 @@
 		// close the content element
 		this.close.addEventListener( 'click', function() {
 			self._hideContent();
+			dotNav.style.visibility = 'visible';
 		} );
 
 		if( this.support ) {
@@ -87,7 +90,7 @@
 			return false;
 		}
 		this.isAnimating = true;
-
+		
 		var self = this,
 			loadContent = function() {
 				// simulating loading...

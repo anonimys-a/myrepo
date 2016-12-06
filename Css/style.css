@@ -34,6 +34,11 @@ a:hover, a:focus, a:active {
 	text-decoration:none;
 }
 
+#Technologysection{
+	margin-top: 7%;
+	margin-bottom: 8%;
+}
+
 #introtekst{
 
 	color: white;
@@ -45,6 +50,17 @@ a:hover, a:focus, a:active {
 h1,h2,h3,h4,h5,p{
 	color: white!important;
 	font-family: 'Lato'!important;
+}
+
+h3{
+	font-size: 120%!important;
+}
+.mvtop p{
+	font-size: 100%!important;
+}
+
+hr{
+	color: #002832;
 }
 
 .golemoh1{
@@ -63,15 +79,49 @@ h1,h2,h3,h4,h5,p{
 
 }
 
+.item{
+	height: 1000px;
+}
+.item img{
+	height: 100%!important;
+	width: 100%!important;
+}
+
 #mov-carousel-example img{
-	height: 100%;
-	width: 100%;
+
 }
 .carousel-inner{
 	text-align: center;
-	height: 400px;
-	max-width: 800px;
+	height: 700px;
 }
+#hbc{
+	text-decoration: none;
+}
+#hbc1{
+	position: absolute;
+	margin-top: 20px;
+}
+#hbc3{
+	position: absolute;
+	margin-top: 20px;
+}
+#fpcc{
+	text-decoration: none;
+}
+#fpcc:hover{
+	text-decoration: none;
+}
+
+#sfp{
+	text-decoration: none;
+}
+#hbc:hover{
+	text-decoration: none;
+}
+#sfp:hover{
+	text-decoration: none;
+}
+
 #customstick{
 	background-color: #00354b!important;
 	z-index: 10!important;
@@ -199,7 +249,10 @@ h1,h2,h3,h4,h5,p{
 .pagehead img{
 	width: 100%;
 	height: 100%;
+	margin-top: -5%;
 	margin-bottom:-18%; 
+	position: relative;
+	z-index: -100;
 }
 
 .card {
@@ -353,6 +406,7 @@ p {
 .tophead {
 	padding-top:60px;
 	text-align: center;
+
 }
 .spec h5 {font-weight:400; font-size:12px;}
 .spec p {
@@ -378,6 +432,7 @@ p {
 .gallery-item {
   display: inline-block;
   vertical-align: top;
+  background-color: black;
   -webkit-transition: height 500ms ease;
   -o-transition: height 500ms ease;
   transition: height 500ms ease;
@@ -394,7 +449,7 @@ p {
   transition: max-height 500ms ease;
 }
 
-.gallery-contents { position: relative; }
+.gallery-contents { position: relative; color: white;}
 
 .gallery-contents:after {
   display: block;
@@ -438,8 +493,8 @@ p {
   height: auto;
   overflow: hidden;
   cursor: pointer;
-  background-color:#fafafa; 
-  border:1px solid #ebebeb;
+  background-color:black; 
+  border:1px solid black;
   text-align:center;
   padding:10px;
 }
@@ -532,7 +587,7 @@ p {
 
 .gallery-expander-contents div.title {
   font-weight: 400;
-  color: white;
+  color: #000;
   font-size:40px;
   line-height:40px;
   padding:0;
@@ -957,4 +1012,22 @@ footer .brdr_bottom {
 		padding:0;
 	}
 	
+}
+
+@media all and (max-width:767px) {
+.item{
+	height: 300px;
+}
+.item img{
+	height: 100%!important;
+	width: 100%!important;
+}
+
+#mov-carousel-example img{
+
+}
+.carousel-inner{
+	text-align: center;
+	height: 200px;
+}
 }

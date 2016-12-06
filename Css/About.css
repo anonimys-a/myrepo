@@ -5,11 +5,10 @@
 body {
 	background: black;
 	color: #eee;
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 2.25;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	position: relative;
-	padding-top:100px;
 	text-align:center;
 }
 
@@ -28,19 +27,18 @@ a:hover, a:focus {
 }*/
 
 section {
-	padding: 0em 3% 4em;
+/*	padding: 0em 3% 4em;	*/
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 .naslovi{
 	margin: 0 auto;
-	width:70%;
+	width: 80%;
+	max-width: 1500px;
 }
 .naslovi h1{
-	color:#eb7e7f;
-}
-.naslovi p{
-	padding:100px;
+	font-weight: bold;			
+	color: #00bff2;
 }
 .noscroll {
 	overflow: hidden;
@@ -222,7 +220,7 @@ section {
 	top: 10px;
 	right: 10px;
 	font-size: 1.6em;
-	color: #fabccf;
+	color: #fff;
 	cursor: pointer;
 	pointer-events: none;
 	padding: 1em;
@@ -283,7 +281,7 @@ p.dummy-text:nth-child(3) {
 /* slikata na background */
 .dummy-img {
 	height: 500px;
-	background: url("../img/1.jpg");
+	background: url("../images/masko.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 30px auto;
@@ -295,7 +293,6 @@ p.dummy-text:nth-child(3) {
 	padding: 10px 0;
 	color: #ddd;
 	font-size: 1em;
-	font-family: 'Blokk', Arial, serif;
 }
 
 .dummy-text:last-child {
@@ -338,80 +335,9 @@ p.dummy-text:nth-child(3) {
 
 /* styles za videotoooooooooooooooooooooooo */
 
-/* from style.css */
-
-.mbr-table {
-  display: table;
-  width: 100%;
-  height: auto;
-  position: relative; 
-}
-.mbr-table-cell {
-  /*display: table-cell;*/
-  float: none;
-  vertical-align: middle; 
-}
-
-.mbr-table-md-up {
-  width: 100%; 
-}
-
-  @media (min-width: 768px) {
-    .mbr-table-md-up {
-      display: table; 
-  	}
-    .mbr-table-md-up .mbr-table-cell {
-        display: table-cell; 
-    }
-    .mbr-table-md-up .mbr-table-cell + .mbr-table-cell {
-        padding-top: 0; 
-    } 
-  }
-
-
-.mbr-section {
-  position: relative;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-
-@media (max-width: 767px) {
-}
-
-@media (min-width: 768px) {
-}
-.mbr-figure {
-  display: block;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%; 
-}
-  
-.mbr-figure img, .mbr-figure iframe {
-	display: block;
-	width: 100%; 
-}
-.mbr-figure .mbr-figure-caption {
-    background: #2e2e2e;
-    color: #fff;
-    text-align: center;
-    width: 100%; 
-}
-.mbr-figure .mbr-figure-caption-over {
-    background: -moz-linear-gradient(left, rgba(67, 76, 99, 0.85), rgba(188, 155, 114, 0.85)) !important;
-    background: -ms-linear-gradient(left, rgba(67, 76, 99, 0.85), rgba(188, 155, 114, 0.85)) !important;
-    background: -o-linear-gradient(left, rgba(67, 76, 99, 0.85), rgba(188, 155, 114, 0.85)) !important;
-    background: -webkit-linear-gradient(left, rgba(67, 76, 99, 0.85), rgba(188, 155, 114, 0.85)) !important;
-    background: linear-gradient(left, rgba(67, 76, 99, 0.85), rgba(188, 155, 114, 0.85)) !important;
-    bottom: 0;
-    position: absolute; 
-}
-/* from bootstrap.min.css */
-.mbr-table, ::after, ::before {
-    box-sizing: inherit;
+.videoPage{
+  width:100vw;
+  height:95vh;
 }
 
 /* do tuka za videotoooooooooooooooooooo*/
@@ -420,31 +346,116 @@ p.dummy-text:nth-child(3) {
 
 figure figcaption {
 	position: absolute;    
+	padding-top: 12px;
 	z-index: 2;    
 	height: 20%;    
 	width: 100%;    
 	top: 0;  
 	/**text, adjust all values as desired**/    
-	margin: 70.5% 0 0 0%;
+	margin: 70.6% 0 0 0%;
 	font-weight: bold;
 	font-size: 30px;
-	background-color: rgba(235, 126, 127, 0.7);
+	background-color: rgba(0, 40, 50, 0.7);
 }
 .head {
-	max-width: 538px !important;
+	max-width: 536px !important;
 }
 
 .headIn {
 	font-size: 40px !important;
+	padding-top: 15px;
 }
 
-.content p {
-	margin: 0 auto;
-	width: 50%;
-	text-align: justify;
-	font-size: 20px;
+@media screen and (min-width: 1500px) {
+	body {
+		font-size: 30px;
+		line-height: 1.5;
+	}
 }
 
-.content h2 {
+
+@media screen and (min-width: 769px) {
+	.content p {
+		margin: 0 auto;
+		width: 50%;
+		text-align: justify;
+	}
+
+	.content h2 {
 	margin-bottom: 20px; 
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		padding: 0;
+	}
+	.naslovi p {
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.content h2 {
+		margin-bottom: 20px;
+		font-size: 50px !important;
+	}
+	.content p {
+		font-size: 15px;
+		line-height: 20px;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.headIn {
+		font-size: 30px !important;
+	}
+	figure figcaption {
+		font-size: 25px;
+	}
+	.grid figure {
+		margin: 0;
+	}
+}
+
+.disks {
+	width: 100%;
+}
+
+.animated { 
+	animation-delay: 1s !important;
+}
+
+.second {
+	margin-top: 100px !important;
+}
+
+
+#First {
+	height: 5vh;
+	margin: 0;
+	padding: 0;
+}
+
+.intro .row {
+	height: 100vh;
+}
+
+#Second, #Third, #Fourth {
+	padding-top: 50px;
+}
+
+.center-container {
+	 height: 10em;
+   position: relative;
+}
+
+.center-container  p  {
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%); }
+
+   .center-container .i-frame  {
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
 }

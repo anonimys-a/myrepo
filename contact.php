@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="Css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="Css/component.css" />
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="Css/Site.css">
 	    <link rel="stylesheet" type="text/css" href="Css/animate.css">
     
@@ -40,13 +40,11 @@
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
                             <li><a href="Home.html">Home</a></li>
-                            <li><a href="Tech Specs.html">Tech Specs</a>
                             <li><a href="About.html">About Us</a></li>
                             <li><a href="contact.php">Contact</a></li>
                       </ul>
           <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
                             <li><a href="Home.html">Home</a></li>
-                            <li><a href="Tech Specs.html">Tech Specs</a>
                             <li><a href="About.html">About Us</a></li>
                             <li><a href="contact.php">Contact</a></li>
           </ul>
@@ -113,8 +111,6 @@
 
 				<p class="footer-links">
 					<a href="Home.html">Home</a>
-                    ·
-                    <a href="Tech Specs.html">Tech Specs</a>
                     ·
                     <a href="About.html">About us</a>
                     ·

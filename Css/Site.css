@@ -90,8 +90,16 @@ border-color: #111 transparent transparent transparent;
   
   .arrow-wrap .arrow {
     -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: infinite;
   }
+
+  hr{
+  border:0.5px solid #002832;
+}
+
+.clearfix h3{
+  text-align: center;
+}
 
 .latobold{
   font-family: 'Open Sans', sans-serif;
@@ -284,7 +292,7 @@ h1 {
   width: 100%;
   background-color: #00597e;
   color: white;
-  z-index: 10000; /*dodadeno*/
+  z-index: -1; /*dodadeno*/
   
 }
 .naslovce{
@@ -404,7 +412,7 @@ footer{
 /* od css za footer-distributed */
 .footer-distributed{
   position: relative;
-  background-color: #323535;
+  background-color: #002832;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -470,7 +478,7 @@ footer{
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #323535;
+  background-color:  #002832;
   color: white;
   font-size: 25px;
   width: 38px;
@@ -512,17 +520,7 @@ footer{
         margin-top: 12px;
       }
 
-/* style for contact us page */
-.send-email-info-message {
-    margin-top: 200px !important;
-    margin-bottom: 196px !important;
-    margin-left: 68px !important;
-    color: white!important;
-}
 
-.fs-numbers {
-	display: none;
-}
 
 /* Footer Right */
 /*
@@ -701,6 +699,12 @@ a.navbar-brand {
         padding-left: 0.5vw;
         margin-top: -5px;
     }
+    .arrow{
+      visibility: hidden;
+    }
+    .arrow-wrap{
+      visibility: hidden;
+    }
 }
 
 
@@ -717,50 +721,50 @@ section {
 }
 
 #dot-nav ul {
-  list-style: none!important;
-  margin:0!important;
-  padding: 0!important;
+  list-style: none;
+  margin:0;
+  padding: 0;
 }
 #dot-nav li {
   position: relative!important;
-  background-color: #00354b!important;
-  border:3px solid #00354b!important;
-  border-radius: 15px 15px 15px 15px!important;
-  cursor: pointer!important;
-  padding: 5px!important;
-  height: 10px!important;
-  margin: 10px 10px 0px 0px!important;
-  width: 10px!important;
-  vertical-align:bottom!important;
+  background-color: #00354b;
+  border:3px solid #00354b;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  padding: 5px;
+  height: 10px;
+  margin: 10px 10px 0px 0px;
+  width: 10px;
+  vertical-align:bottom;
 }
 #dot-nav li.active, #dot-nav li:hover {
-  background-color: #00354b!important;
+  background-color: #00354b;
 }
 
 #dot-nav a {
-  outline: 0!important;
-  vertical-align:top!important;
-  margin: 0px 0px 0px 25px!important;
-  position: relative!important;
-  top:-5px!important;
+  outline: 0;
+  vertical-align:top;
+  margin: 0px 0px 0px 25px;
+  position: relative;
+  top:-5px;
 }
 .awesome-tooltip + .tooltip > .tooltip-inner {
-    background-color: #00354b!important; 
-    color: white!important; 
-    border: 1px solid #00354b!important; 
+    background-color: #00354b; 
+    color: white; 
+    border: 1px solid #00354b; 
 }
 .awesome-tooltip + .tooltip.left > .tooltip-arrow{
-    top:50%!important;
-    right:0!important;
-    margin-top:-5px!important;
-    border-top:5px solid transparent!important;
-    border-bottom:5px solid transparent!important;
-    border-left:5px solid white!important;
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid white;
 }
 
 @media screen and (max-width: 767px) {
   #dot-nav{    
-  visibility: hidden!important;
+  visibility: hidden;
 }
 }
 

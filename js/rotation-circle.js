@@ -25,8 +25,10 @@ $(document).ready(function() {
 	    }
 	}
 
-	$('.selector button').click(function(e) {
-	    toggleOptions($(this).parent());
+	$('.selector button.main-member-in-circle').click(function(e) {
+		e.preventDefault();
+	    var showElementId = this.id;
+	    $(".about-us-biografy").html($("." + showElementId).html());
 	});
 
 	setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
@@ -35,6 +37,6 @@ $(document).ready(function() {
 	$('div.selector input').click(function(e) {
 		e.preventDefault();
 	    var showElementId = this.id;
-	    $(".biografy p").text($("." + showElementId).text());
+	    $(".about-us-biografy").html($("." + showElementId).html());
 	});
 });

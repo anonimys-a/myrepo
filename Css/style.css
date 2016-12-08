@@ -778,7 +778,7 @@ margin: 0 auto;
   font-weight: 300;
 }
 
-.selector button {
+.selector button.main-member-in-circle {
   position: relative;
   width: 164%;
   height: 164%;
@@ -857,13 +857,13 @@ margin: 0 auto;
   font-size: 14px;
 }
 
-.biografy {
+.about-us-biografy {
   position: absolute;
   left: 60%;
   top: 50%;
   width: 500px;
   height: auto;
-  margin-top: -70px;
+  margin-top: -208px;
   margin-left: -70px;
 }
 

@@ -1,0 +1,461 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: black;
+	color: #eee;
+	font-size: 1.5em;
+	line-height: 2.25;
+	font-family: 'Lato', sans-serif;
+	position: relative;
+	text-align:center;
+}
+
+.container-fluid {
+	overflow: hidden;
+}
+
+/*a {
+	color: rgba(0,0,0,0.4);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}*/
+
+section {
+/*	padding: 0em 3% 4em;	*/
+	text-align: center;
+	font-size: 1.2em;
+}
+.naslovi{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1500px;
+}
+.naslovi h1{
+	font-weight: bold;			
+	color: #00bff2;
+}
+.noscroll {
+	overflow: hidden;
+}
+
+.grid-wrap {
+	margin: 10px auto 0;
+	max-width: 1250px;
+	width: 100%;
+	padding: 0;
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+}
+
+.grid {
+	position: relative;
+	-webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
+	transition: all 0.5s cubic-bezier(0,0,0.25,1);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.view-full .grid {
+	-webkit-transform: translateZ(-1500px);
+	transform: translateZ(-1500px);
+}
+
+.grid figure,
+.grid .placeholder {
+	max-width: 350px;
+	height: auto;
+}
+
+.grid figure {
+	margin: 10px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* dodadeno za tekstot na slikite */
+	position: relative;
+	z-index: 1;
+	width: 100%; 
+}
+
+.grid figure.active {
+	opacity: 0;
+}
+
+.grid .placeholder {
+	pointer-events: none;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.placeholder > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.placeholder .front img {
+	width: 100%;
+	height: 100%;
+}
+
+.placeholder .back {
+	background: white;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.view-full .placeholder {
+	-webkit-transition: all 0.5s 0.1s cubic-bezier(0,0,0.25,1);
+	transition: all 0.5s 0.1s cubic-bezier(0,0,0.25,1);
+}
+
+.vertical .view-full .placeholder {
+	-webkit-transform: translateZ(1500px) rotateX(-179.9deg);
+	transform: translateZ(1500px) rotateX(-179.9deg); /* FF, Chrome, can we agree on one direction, pleeease? */
+}
+
+.horizontal .view-full .placeholder {
+	-webkit-transform: translateZ(1500px) rotateY(-179.9deg);
+	transform: translateZ(1500px) rotateY(-179.9deg);
+}
+
+.grid figure img {
+	display: block;
+	width: 100%;
+}
+
+.content,
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none; /* Careful, does not work in IE < 11 http://caniuse.com/#search=pointer-events */
+}
+
+.content {
+	overflow-y: scroll;
+	height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
+	background: #000;
+	visibility: hidden;
+	z-index: 400;
+	-webkit-overflow-scrolling: touch;
+}
+
+.loading {
+	opacity: 0;
+	z-index: 1;
+	background: transparent  no-repeat center center;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.loading.show {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.content.show {
+	height: auto;
+	pointer-events: auto;
+	visibility: visible;
+}
+
+.content > div {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	background: rgba(9, 8, 9, 0.80);
+}
+
+.content > div.show {
+	padding-top:100px;
+	height: auto;
+	opacity: 1;	
+	-webkit-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+}
+
+.icon:before {
+	font-family: 'fontawesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.close-content {
+	position: fixed;
+	z-index: 1000;
+	top: 10px;
+	right: 10px;
+	font-size: 1.6em;
+	color: #fff;
+	cursor: pointer;
+	pointer-events: none;
+	padding: 1em;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.close-content:hover {
+	color: #999;
+}
+
+.content > div.show ~ .close-content {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+/* Dummy content */
+
+.dummy-img,
+.dummy-text {
+	max-width: 600px;
+	width: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+
+.horizontal .dummy-img,
+.horizontal .dummy-text {
+	-webkit-transform: translateX(-100px);
+	transform: translateX(-100px);
+}
+
+.content > div.show .dummy-img,
+.content > div.show .dummy-text {
+	opacity: 1;
+}
+
+.horizontal .content > div.show .dummy-img,
+.horizontal .content > div.show .dummy-text {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+p.dummy-text:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+p.dummy-text:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+/* slikata na background */
+.dummy-img {
+	height: 500px;
+	background: url("../images/masko.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 30px auto;
+}
+
+.dummy-text {
+	text-align: left;
+	margin: 0 auto;
+	padding: 10px 0;
+	color: #ddd;
+	font-size: 1em;
+}
+
+.dummy-text:last-child {
+	padding-bottom: 100px;
+}
+
+/* Simple fallback */
+/* if any of these are not supported, a simple fallback will be shown */
+.no-pointerevents .content,
+.no-csstransforms3d .content,
+.no-csstransitions .content,
+.no-pointerevents .content > div,
+.no-csstransforms3d .content > div,
+.no-csstransitions .content > div,
+.no-pointerevents .close-content,
+.no-csstransforms3d .close-content,
+.no-csstransitions .close-content {
+	opacity: 1;
+	visibility: visible;
+	display: none;
+	height: auto;
+}
+
+.no-pointerevents .show .close-content,
+.no-csstransforms3d .show .close-content,
+.no-csstransition .show .close-content,
+.no-pointerevents div.show,
+.no-csstransforms3d div.show,
+.no-csstransitions div.show,
+.no-csstransitions .dummy-img,
+.no-csstransitions .dummy-text,
+.no-csstransforms3d .dummy-img,
+.no-csstransforms3d .dummy-text, 
+.no-pointerevents .dummy-img,
+.no-pointerevents .dummy-text {
+	display: block !important;
+	opacity: 1;
+}
+
+
+/* styles za videotoooooooooooooooooooooooo */
+
+.videoPage{
+  width:100vw;
+  height:95vh;
+}
+
+/* do tuka za videotoooooooooooooooooooo*/
+
+/* tekstot na slikite */
+
+figure figcaption {
+	position: absolute;    
+	padding-top: 12px;
+	z-index: 2;    
+	height: 20%;    
+	width: 100%;    
+	top: 0;  
+	/**text, adjust all values as desired**/    
+	margin: 70.6% 0 0 0%;
+	font-weight: bold;
+	font-size: 30px;
+	background-color: rgba(0, 40, 50, 0.7);
+}
+.head {
+	max-width: 536px !important;
+}
+
+.headIn {
+	font-size: 40px !important;
+	padding-top: 15px;
+}
+
+@media screen and (min-width: 1500px) {
+	body {
+		font-size: 30px;
+		line-height: 1.5;
+	}
+}
+
+
+@media screen and (min-width: 769px) {
+	.content p {
+		margin: 0 auto;
+		width: 50%;
+		text-align: justify;
+	}
+
+	.content h2 {
+	margin-bottom: 20px; 
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		padding: 0;
+	}
+	.naslovi p {
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.content h2 {
+		margin-bottom: 20px;
+		font-size: 50px !important;
+	}
+	.content p {
+		font-size: 15px;
+		line-height: 20px;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.headIn {
+		font-size: 30px !important;
+	}
+	figure figcaption {
+		font-size: 25px;
+	}
+	.grid figure {
+		margin: 0;
+	}
+}
+
+.disks {
+	width: 100%;
+}
+
+.animated { 
+	animation-delay: 1s !important;
+}
+
+.second {
+	margin-top: 100px !important;
+}
+
+
+#First {
+	height: 5vh;
+	margin: 0;
+	padding: 0;
+}
+
+.intro .row {
+	height: 100vh;
+}
+
+#Second, #Third, #Fourth {
+	padding-top: 50px;
+}
+
+.center-container {
+	 height: 10em;
+   position: relative;
+}
+
+.center-container  p  {
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%); }
+
+   .center-container .i-frame  {
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+}

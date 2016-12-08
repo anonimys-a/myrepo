@@ -25,7 +25,7 @@ $(document).ready(function() {
 	    }
 	}
 
-	$('.selector button.main-member-in-circle').click(function(e) {
+	$('.selector .main-member-in-circle').click(function(e) {
 		e.preventDefault();
 	    var showElementId = this.id;
 	    $(".about-us-biografy").html($("." + showElementId).html());

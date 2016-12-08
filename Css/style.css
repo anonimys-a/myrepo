@@ -773,12 +773,12 @@ margin: 0 auto;
 }
 
 .selector,
-.selector button {
+.selector img.main-member-in-circle {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 
-.selector button.main-member-in-circle {
+.selector .main-member-in-circle {
   position: relative;
   width: 164%;
   height: 164%;
@@ -795,9 +795,9 @@ margin: 0 auto;
   transition: all .1s;
 }
 
-.selector button:hover { background: #3071a9; }
+.selector img.main-member-in-circle:hover { background: #3071a9; }
 
-.selector button:focus { outline: none; }
+.selector img.main-member-in-circle:focus { outline: none; }
 
 .selector ul {
   position: absolute;

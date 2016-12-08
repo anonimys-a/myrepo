@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<title>About Us</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    	<link rel="stylesheet" href="Css/style.css">
+    	<link href="Css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" type="text/css" href="Css/jquery-ui.css"/>
 		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,6 +20,7 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <script src="js/Dotnav.js"></script>
 		<script src="js/modernizr.custom.js"></script>
+    <script src="js/rotation-circle.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -50,43 +55,23 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
-    </div>
+   
     	<!-- videoo -->
-    	<div id="First"></div>
-    	<div class="videoPage">
-          <iframe width="100%" height="100%"
-            src="https://www.youtube.com/embed/6vopR3ys8Kw" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">
-          </iframe>
-  	    </div>
-  	    <div data-spy="affix" id="dot-nav">
-        <ul>
-            <li class="awesome-tooltip active" title="Video"><a href="#First"></a></li>
-            <li class="awesome-tooltip" title="Openbiz"><a href="#Second"></a></li>
-            <li class="awesome-tooltip" title="ShadowGrid"><a href="#Third"></a></li>
-            <li class="awesome-tooltip" title="Team"><a href="#Fourth"></a></li>
-            
-        </ul>
+    <div id="First"></div>
+    <div class="row">
+      <div class="col-sm-12">
+            <div class="videoPage">
+                <iframe width="100%" height="100%"
+                  src="https://www.youtube.com/embed/6vopR3ys8Kw" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">
+                </iframe>
+           </div>
+      </div>
     </div>
-		<div class="naslovi" id="Second">
-    		<div class="intro">
-	    		<div class="row">
-					<div class="col-md-7 center-container"><img class="disks" src="Images/disks.png"/></div>
-					<div class="col-md-5 center-container"><p class="naScroll">Openbiz Technology was established in 2015 with the aim to introduce new advanced, high-end artificial intelligence and network security solutions. Being aware of the changing market flow and the developing trends of the IT industry, our goal is to introduce the best and most innovative cyber security product while providing optimal customer support and workspace efficiency.</p></div>
-				</div>
-				<!--</br>-->
-				<div class="row" id="Third">
-					<div class="col-md-7 center-container"><p class="naScroll">Small and medium-sized enterprises are Openbiz’s primary target, i.e. launching smart business projects to offshore and international markets like China, the US, Europe and all English speaking countries. Openbiz focuses on effective improvement of business management, network intelligence and cyber security, by increasing the potential growth space for clients. The main project ShadowGrid, incorporates Virtual Reality and Artificial Intelligence.
-					ShadowGrid’s development center is currently located in Skopje, Macedonia.</p></div>
-					<div class="col-md-5 center-container">
-						<div class="i-frame">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.3832556418433!2d21.39909065516539!3d41.99275855738528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354141687d73319%3A0x9a678e06375e1b7a!2sOpenBiz+Technology!5e1!3m2!1smk!2smk!4v1480418702524" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-				<br/>
-			</div>
-			
-			
+
+
+
+<!--
+    <div class="container rel">
 			<div class="team" id="Fourth">
 				<h1>We Are a Team</h1>
 
@@ -98,7 +83,7 @@
 			</div>
 		</div>
 			<!-- Top Navigation -->
-			
+<!--			
 			<section class="grid3d vertical" id="grid3d">
 				<div class="grid-wrap">
 					<div class="grid">
@@ -115,7 +100,8 @@
 						<figure><img src="Images/masko.png" alt="img07"/><figcaption>Hristina Sibinovska</figcaption></figure>
 						<figure><img src="Images/masko.png" alt="img07"/><figcaption>Marija Bozinovska</figcaption></figure>
 					</div>
-				</div><!-- /grid-wrap -->
+				</div><!-- /grid-wrap --> 
+ <!--       
 				<div class="content">
 					<div>
 						<div class="dummy-img"></div>
@@ -210,6 +196,89 @@
 					<span class="close-content"><i class="fa fa-arrow-left"></i></span>
 				</div>
 			</section>
+-->
+      
+      <div class="row" id="circle-person" style="margin-top: 300px; margin-bottom: 500px">
+          <div class="col-sm-12">
+              <div class="selector">
+                  <ul>
+                    <li>
+                      <input id='c1' type='checkbox'>
+                      <label class="img-max-width" for='c1'>Menu 1</label>
+                    </li>
+                    <li class="second-person">
+                      <input id='c2' type='checkbox'>
+                      <label class="img-max-width" for='c2'>Menu 2</label>
+                    </li>
+                    <li>
+                      <input id='c3' type='checkbox'>
+                      <label class="img-max-width" for='c3'>Menu 3</label>
+                    </li>
+                    <li>
+                      <input id='c4' type='checkbox'>
+                      <label class="img-max-width" for='c4'>Menu 4</label>
+                    </li>
+                    <li>
+                      <input id='c5' type='checkbox'>
+                      <label class="img-max-width" for='c5'>Menu 5</label>
+                    </li>
+                    <li>
+                      <input id='c6' type='checkbox'>
+                      <label class="img-max-width" for='c6'>Menu 6</label>
+                    </li>
+                    <li>
+                      <input id='c7' type='checkbox'>
+                      <label class="img-max-width" for='c7'>Menu 7</label>
+                    </li>
+                    <li>
+                      <input id='c8' type='checkbox'>
+                      <label class="img-max-width" for='c8'>Menu 8</label>
+                    </li>
+                  </ul>
+                  <button>Click to toggle the menus</button>
+              </div>
+
+         
+              <div class="biografy">
+                <p>DIRECTOR</p>
+              </div>
+
+              <p style="display:none" class="c1">A page can't be manipulated safely until the document is "ready." jQuery detects this 
+              state of readiness for you. Code included inside $( document ).ready() will only run once the 
+              page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window )
+              load(function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready.</p>
+
+              <p style="display:none" class="c2">Ova e vtor clen.A page can't be manipulated safely until the document is "ready." jQuery detects this 
+              state of readiness for you. Code included inside $( document ).ready() will only run once the 
+              page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window )
+              load(function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready.Ova e vtor clen.A page can't be manipulated safely until the document is "ready." jQuery detects this 
+              state of readiness for you. Code included inside $( document ).ready() will only run once the 
+              page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window )
+              load(function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready.Ova e vtor clen.A page can't be manipulated safely until the document is "ready." jQuery detects this 
+              state of readiness for you. Code included inside $( document ).ready() will only run once the 
+              page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window )
+              load(function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready.End</p>
+
+              <p style="display:none" class="c3">Ova e tret clen.A page can't be manipulated safely until the document is "ready." jQuery detects this 
+              state of readiness for you. Code included inside $( document ).ready() will only run once the 
+              page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window )
+              load(function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready.</p>
+ 
+      </div>
+    
+      </div>
+          
+          
+
+         
+
+
+  
+
+
+
+
+
 			<footer class="footer-distributed">
 			
 				<div class="footer-left">
@@ -284,5 +353,9 @@
 			$window.trigger('scroll');
 
 		</script>
+		<script src="js/jquery.imagelistexpander.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/scripts.js"></script>
+       </div>
 </body>
 </html>

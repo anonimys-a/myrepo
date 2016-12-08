@@ -876,6 +876,80 @@ margin: 0 auto;
 	margin-bottom: 500px
 }
 
+/*proba*/
+.bg-grey {
+    background-color: green;
+}
+section.team {
+	padding: 100px 0;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/*proba2*/
+.featurette {
+    overflow: hidden;
+}
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-heading {
+    font-size: 50px;
+}
+.featurette-divider {
+    margin: 80px 0;
+}
+
+/*proba3*/
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+.section-heading {
+    margin-bottom: 30px;
+}
+
+/*proba4*/
+.content-section-a {
+    padding: 50px 0;
+    background-color: #948888;
+}
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+.section-heading {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
 footer {
 	background:#fff;
 }

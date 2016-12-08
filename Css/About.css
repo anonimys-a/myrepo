@@ -155,7 +155,7 @@ section {
 .content {
 	overflow-y: scroll;
 	height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
-	background: #fff;
+	background: #000;
 	visibility: hidden;
 	z-index: 400;
 	-webkit-overflow-scrolling: touch;

@@ -762,6 +762,28 @@ margin: 0 auto;
 .readBtn:hover {color:#fff; text-decoration:none; }
 
 /* circles style*/
+
+
+ul.circle-container {
+	    position: relative;
+	    top: 200px; left: 200px; /*for example purposes only*/
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	
+	li.circle-list-item {
+	    position: absolute;
+	    -webkit-transition: all 2s linear;
+	    -moz-transition: all 2s linear;
+	    transition: all 2s linear;
+	}
+	
+	.round-image {
+		border-radius: 50%;
+	}
+
+
 .selector {
   position: absolute;
   left: 23%;
@@ -872,8 +894,8 @@ margin: 0 auto;
 }
 
 #circle-person {
-	margin-top: 460px; 
-	margin-bottom: 500px
+	margin-top: 342px; 
+	margin-bottom: 21px
 }
 
 /*proba*/

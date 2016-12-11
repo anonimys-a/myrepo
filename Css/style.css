@@ -968,6 +968,248 @@ h4 {
 }
 
 
+/*drvo*/
+/*Team tree stuff*/
+
+.team-tree-section {
+    /*To hide the horizontal scroller appearing during the animation*/
+    overflow: hidden;
+    position: relative;
+    min-height: 150vh;
+}
+
+    .team-tree-section h1{
+        position: absolute;
+        top: 15%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        color: rgba(34, 49, 63, 0.80);
+        font-family: 'Roboto Condensed',sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @media screen and (min-width:768px) { /*************** dodadeno ************/
+        .team-tree-section h1{
+            font-size: 7em;
+        }
+    }
+    @media screen and (max-width:767px){
+        .team-tree-section h1{
+            font-size: 3em;
+        }
+    }
+
+    @media screen and (max-width:1000px){
+        .team-tree .team-tree-img{
+            display:none;
+        }
+    }
+
+.team-header {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.team-tree {
+    position: relative;
+    min-height: 100vh;
+}
+
+    .team-tree img {
+        max-width: 1000px;
+        position: absolute;
+        margin: 0 auto;
+        top: -15%;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+
+/*
+    Team animations
+*/
+
+.ch-grid {
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+    .ch-grid:after,
+    .ch-item:before {
+        content: '';
+        display: table;
+    }
+
+    .ch-grid:after {
+        clear: both;
+    }
+
+    .ch-grid li {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        margin: 20px 10px;
+    }
+
+@media screen and (min-width:1000px) {
+    .ch-grid li:nth-child(2n+1):not(:last-child) {
+        position: relative;
+        top: 100px;
+    }
+}
+
+/*Specific style for hover*/
+.ch-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    cursor: default;
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.ch-img-1 {
+    background-image: url(../images/about/Team/lisica.png);
+    background-size: cover;
+}
+
+.ch-img-2 {
+    background-image: url(../images/about/Team/mecka.png);
+    background-size: cover;
+}
+
+.ch-img-3 {
+    background-image: url(../images/about/Team/rakun.png);
+    background-size: cover;
+}
+
+.ch-img-4 {
+    background-image: url(../images/about/Team/zajak.png);
+    background-size: cover;
+}
+
+.ch-img-5 {
+    background-image: url(../images/about/Team/elen.png);
+    background-size: cover;
+}
+
+.ch-img-6 {
+    background-image: url(../images/about/Team/ververicka.png);
+    background-size: cover;
+}
+
+.ch-img-7 {
+    background-image: url(../images/about/Team/prasalnik.png);
+    background-size: cover;
+}
+
+
+.ch-info {
+    position: absolute;
+    background: rgba(63, 147, 147, 0.8);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-backface-visibility: hidden;
+}
+
+    .ch-info h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin: 0 30px;
+        padding: 40px 0 0 0;
+        height: 120px;
+        text-align: center !important;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .ch-info p {
+        color: #fff;
+        padding: 10px 5px;
+        font-style: italic;
+        margin: 0 30px;
+        font-size: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        text-align: center;
+        -webkit-transition: all 1s ease-in-out 0.4s;
+        -moz-transition: all 1s ease-in-out 0.4s;
+        -o-transition: all 1s ease-in-out 0.4s;
+        -ms-transition: all 1s ease-in-out 0.4s;
+        transition: all 1s ease-in-out 0.4s;
+    }
+
+        .ch-info p a {
+            display: block;
+            color: #fff;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 1px;
+            padding-top: 4px;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+
+            .ch-info p a:hover {
+                color: #fff222;
+                color: rgba(255, 242, 34, 0.8);
+            }
+
+.ch-item:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+    .ch-item:hover .ch-info {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+        .ch-item:hover .ch-info p {
+            opacity: 1;
+        }
+/*
+   End of Team animations
+*/
 
 
 
@@ -1247,4 +1489,10 @@ footer .brdr_bottom {
 	text-align: center;
 	height: 200px;
 }
+}
+
+
+
+.img-center {
+    margin: 0 auto!important;
 }

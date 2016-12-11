@@ -1496,3 +1496,33 @@ footer .brdr_bottom {
 .img-center {
     margin: 0 auto!important;
 }
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+	.big-circle-display {
+		display: none;
+	}
+	
+	.horisontal-circles {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	.big-circle-display {
+		display: none;
+	}
+	
+	.horisontal-circles {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1600px) and (min-width: 992px) {
+	.big-circle-display {
+		display: block;
+	}
+	
+	.horisontal-circles {
+		display: none;
+	}
+}

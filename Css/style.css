@@ -898,6 +898,10 @@ ul.circle-container {
 	margin-bottom: 21px
 }
 
+.circle-text-modal {
+	color: black;
+}
+
 /*proba*/
 .bg-grey {
     background-color: green;

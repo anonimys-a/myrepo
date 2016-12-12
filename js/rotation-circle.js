@@ -24,9 +24,9 @@ $(document).ready(function() {
     		$('li#c8 img').attr("src", "http://lorempixel.com/100/100/nature");
     		$('li#c9 img').attr("src", "http://lorempixel.com/100/100/nature");
     		$('li#c10 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c11 img').attr("src", "http://lorempixel.com/100/100/nature");
+    		$('li#c11 img').attr("src", "http://lorempixel.com/150/150/nature");
     		
-    		$('li.main-member-in-circle').css({"margin-top":"0px", "margin-left":"0px"});
+    		$('li.main-member-in-circle').css({"margin-top":"-37px", "margin-left":"-22px"});
     		
         } else if (Modernizr.mq("screen and (min-width:1200px)")) {
         	radius = '17em';

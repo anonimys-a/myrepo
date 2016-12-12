@@ -1526,3 +1526,10 @@ footer .brdr_bottom {
 		display: none;
 	}
 }
+
+@media screen (min-width: 1500px) {
+	.big-circle-display {
+	    font-size: 10px!important;
+	    line-height: 1.5;
+	}
+}

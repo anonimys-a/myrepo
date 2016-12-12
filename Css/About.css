@@ -371,6 +371,10 @@ figure figcaption {
 		font-size: 30px;
 		line-height: 1.5;
 	}
+	body .big-circle-display {
+	    font-size: 15px!important;
+	    line-height: 1.5;
+	}
 }
 
 

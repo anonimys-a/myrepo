@@ -18,8 +18,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	    <script type="text/javascript" src="js/jquery.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	    <script src="js/Dotnav.js"></script>
-		<script src="js/modernizr.custom.js"></script>
+	   
+		
     	<script src="js/rotation-circle.js"></script>
 </head>
 <body>
@@ -376,42 +376,8 @@
 		</footer>
 	</div><!-- /.container-fluid-end -->
 	
-	<script src="js/classie.js"></script>
-	<script src="js/helper.js"></script>
-	<script src="js/grid3d.js"></script>
-	<script>
-		new grid3D( document.getElementById( 'grid3d' ) );
-	</script>
-	<script type="text/javascript">
-		var $animation_elem = $('.naScroll');
-		var $window = $(window);
 
-		function check_if_in_view() {
-		    var window_height = $window.height();
-		    var window_top_position = $window.scrollTop();
-		    var window_bottom_position = (window_top_position + window_height);
 
-		    $.each($animation_elem, function () {
-		        var $elem = $(this);
-		        var element_height = $elem.outerHeight();
-		        var element_top_position = $elem.offset().top;
-		        var element_bottom_position = (element_top_position + element_height);
-
-		        //check to see if this current container is within viewport
-		        if ((element_bottom_position >= window_top_position) &&
-		            (element_top_position <= window_bottom_position)) {
-		            $elem.addClass('animated fadeInUp');
-		        }
-		        
-		    });
-		}
-
-		$window.on('scroll resize', check_if_in_view);
-		$window.trigger('scroll');
-
-	</script>
-	<script src="js/jquery.imagelistexpander.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/scripts.js"></script>
+   
 </body>
 </html>

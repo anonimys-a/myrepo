@@ -762,172 +762,261 @@ margin: 0 auto;
 }
 .readBtn:hover {color:#fff; text-decoration:none; }
 
-/* circles style*/
-
-
-ul.circle-container {
-	    position: relative;
-	    top: 300px; left: 300px; /*for example purposes only*/
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	}
-	
-	li.circle-list-item {
-	    position: absolute;
-	    -webkit-transition: all 2s linear;
-	    -moz-transition: all 2s linear;
-	    transition: all 2s linear;
-	}
-	
-	.round-image {
-		border-radius: 50%;
-	}
-
-
-.selector {
-  position: absolute;
-  left: 23%;
-  top: 50%;
-  width: 140px;
-  height: 140px;
-  margin-top: -70px;
-  margin-left: -70px;
+/*our team*/
+.team-member {
+    max-width: 320px;
+    margin: 30px auto;
+    text-align: center;
 }
 
-.selector,
-.selector img.main-member-in-circle {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+.team-member .thumb {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px auto;
 }
 
-.selector .main-member-in-circle {
-  position: relative;
-  width: 164%;
-  height: 164%;
-  margin-left: -38px;
-  margin-top: -42px;
-  padding: 10px;
-  background: #428bca;
-  border-radius: 50%;
-  border: 0;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  transition: all .1s;
+#team .page-header {
+    line-height: 1.8;
+    padding-bottom: 0;
+    border-bottom: none;
+    text-transform: uppercase;
+    margin: 36px 0;
 }
 
-.selector img.main-member-in-circle:hover { background: #3071a9; }
-
-.selector img.main-member-in-circle:focus { outline: none; }
-
-.selector ul {
-  position: absolute;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  top: -20px;
-  right: -20px;
-  bottom: -20px;
-  left: -20px;
+#team .page-header small {
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #b3b3b3;
 }
 
-.selector li {
-  position: absolute;
-  width: 0;
-  height: 100%;
-  margin: 0 50%;
-  -webkit-transform: rotate(-360deg);
-  transition: all 0.8s ease-in-out;
+.social-btn.sb-sm {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+    line-height: 36px;
+    margin: 6px 2px;
 }
 
-.selector li input { display: none; }
-
-.selector li input + label {
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  width: 0;
-  height: 0;
-  line-height: 1px;
-  margin-left: 0;
-  background: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: none;
-  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+.sb-linkedin {
+    background-color: #ffffff;
 }
 
-.selector li input + label:hover { background: #f0f0f0; }
+.sb-linkedin:hover {
+    background-color: #0fa2df;
+    color: #ffffff;
+}   
 
-.selector li input:checked + label {
-  background: #5cb85c;
-  color: white;
+.sb-facebook {
+    background-color: #ffffff;
 }
 
-.selector li input:checked + label:hover { background: #449d44; }
-
-.selector.open li input + label {
-  width: 140px;
-  height: 140px;
-  line-height: 80px;
-  margin-left: 111px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+.sb-facebook:hover {
+ 	background-color: #0fa2df;
+    color: #ffffff;
 }
 
-.about-us-biografy {
-  position: absolute;
-  left: 60%;
-  top: 50%;
-  width: 500px;
-  height: auto;
-  margin-top: -208px;
-  margin-left: -70px;
+.sb-twitter {
+    background-color: #ffffff;
 }
 
-#circle-person .selector ul li label.img-max-width {
-    max-width: none !important;
+.sb-twitter:hover {
+    background-color: #0fa2df;
+    color: #ffffff;
 }
 
-#circle-person {
-	margin-top: 342px; 
-	margin-bottom: 21px
+.social-btn {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    color: #b3b3b3;
+    line-height: 54px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 8px 4px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
 }
 
-.circle-text-modal {
-	color: black;
+.btn-custom {
+	display: inline-block;
+	margin-top: 20px!important;
+	padding: 10px 40px!important;
+	color: #b3b3b3!important;
+	font-size: 18px!important;
+	font-weight: 700!important;
+	text-transform: uppercase!important;
+	border: none!important;
+	border-radius: 20px!important;
+	outline: 0!important;
+	transition: all 0.1s ease-in !important;
 }
 
-.horisontal-circles ul.list-inline li img:hover {
-	opacity: 0.8;
+.btn-transparent {
+	background: #ffffff;
+	color: #b3b3b3!important;
 }
 
-.big-circle-display ul.circle-container li img:hover {
-	cursor: pointer;
-	opacity: 0.8;
+.btn-transparent:hover {
+	background: #0fa2df;;
+	color: #ffffff!important;
 }
 
-
-/*proba3*/
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-.section-heading {
-    margin-bottom: 30px;
+#team {
+	padding: 60px 0;
 }
 
+.clear {clear: both;}
+
+/*proba effect krug*/
+.section{
+	width: 900px;
+	height: 420px;
+	margin: 20px auto;
+	position: relative;
+}
+/* Message to show when border-radius is not supported */
+.message{
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+	font-size: 20px;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+.no-borderradius .message{
+	display: block;
+}
+/* Box with dashed border to show the bounding box of the circle */
+.normal-trigger-area{
+	width: 262px;
+    height: 262px;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	border: 1px dashed #916d57;
+	background: rgba(179,143,121,0.1);
+	-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: 0 0 0 1px rgba(255,255,255,0.5);
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.5);
+}
+/* The circle */
+.ec-circle{
+    width: 262px;
+    height: 262px;
+	-webkit-border-radius: 210px;
+	-moz-border-radius: 210px;
+	border-radius: 50%;
+	text-align: center;
+    overflow: hidden;
+	font-family:'Kelly Slab', Georgia, serif;
+    background: #dda994 url(../images/1.jpg) no-repeat center center;
+	-webkit-box-shadow: 
+        inset 0 0 1px 230px rgba(0,0,0,0.6),
+		inset 0 0 0 7px #d5ad94;
+	-moz-box-shadow: 
+        inset 0 0 1px 230px rgba(0,0,0,0.6),
+		inset 0 0 0 7px #d5ad94;
+	box-shadow: 
+        inset 0 0 1px 230px rgba(0,0,0,0.6),
+		inset 0 0 0 7px #d5ad94;
+	-webkit-transition: box-shadow 400ms ease-in-out;
+	-moz-transition: box-shadow 400ms ease-in-out;
+	-o-transition: box-shadow 400ms ease-in-out;
+	-ms-transition: box-shadow 400ms ease-in-out;
+	transition: box-shadow 400ms ease-in-out;
+	/*For IE < 9 so that we have some kind of effect */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	display: block;
+	outline: none;
+}
+.ec-circle-hover{
+	-webkit-box-shadow: 
+		inset 0 0 0 0 rgba(0,0,0,0.6),
+		inset 0 0 0 20px #c18167,
+		0 0 10px rgba(0,0,0,0.3);
+	-moz-box-shadow: 
+		inset 0 0 0 0 rgba(0,0,0,0.6),
+		inset 0 0 0 20px #c18167,
+		0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 
+		inset 0 0 0 0 rgba(0,0,0,0.6),
+		inset 0 0 0 20px #c18167,
+		0 0 10px rgba(0,0,0,0.3);
+	/*For IE < 9 so that we have some kind of effect */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+/* Text inside of circle */
+.ec-circle h3{
+	color: transparent;
+    font-size: 66px;
+	line-height: 420px;
+    text-shadow: 0px 0px 100px #fff;
+	text-transform: uppercase;
+    -webkit-transition: text-shadow 400ms ease-in-out;
+	-moz-transition: text-shadow 400ms ease-in-out;
+	-o-transition: text-shadow 400ms ease-in-out;
+	-ms-transition: text-shadow 400ms ease-in-out;
+	transition: text-shadow 400ms ease-in-out;
+}
+.ec-circle-hover h3{
+	text-shadow: 0px 0px 1px #fff;
+}
+/* Content on the right side */
+.content{
+	width: 420px;
+	float: right;
+}
+.content a{
+	color: #c18167;
+	font-weight: bold;
+}
+.content a:hover{
+	color: #000;
+}
+.content p{
+	padding: 10px 0px;
+	font-size: 16px;
+	line-height: 26px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+}
+.content h1{
+	font-family:'Kelly Slab', Georgia, serif;
+    font-size: 46px;
+	padding-bottom: 10px;
+	color: #c18167;
+	text-shadow: 2px 1px 2px rgba(0,0,0,0.2), 0px 0px 1px #fff;
+}
+.content h1 span{
+	font-size: 22px;
+}
+
+.ec-circle:hover{
+	-webkit-box-shadow: 
+		inset 0 0 0 0 rgba(0,0,0,0.6),
+		inset 0 0 0 20px #c18167,
+		0 0 10px rgba(0,0,0,0.3);
+	-moz-box-shadow: 
+		inset 0 0 0 0 rgba(0,0,0,0.6),
+		inset 0 0 0 20px #c18167,
+		0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 
+		inset 0 0 0 0 rgba(0,0,0,0.6),
+		inset 0 0 0 20px #c18167,
+		0 0 10px rgba(0,0,0,0.3);
+	/*For IE < 9 so that we have some kind of effect */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.ec-circle:hover h3{
+	text-shadow: 0px 0px 1px #fff;
+}
 
 
 

@@ -3,25 +3,29 @@
 <head>
 		<meta charset="UTF-8" />
 		<title>About Us</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    	<link rel="stylesheet" href="Css/style.css">
-    	<link href="Css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    	<link rel="stylesheet" type="text/css" href="Css/jquery-ui.css"/>
+    	<link rel="stylesheet" href="css/style.css">
+    	<link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
 		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="Css/Site.css">
-    	<link rel="stylesheet" type="text/css" href="Css/animate.css">
-    	<link rel="stylesheet" type="text/css" href="Css/About.css">
-		<link rel="stylesheet" type="text/css" href="Css/normalize.css" />
+	    <link rel="stylesheet" type="text/css" href="css/Site.css">
+    	<link rel="stylesheet" type="text/css" href="css/animate.css">
+    	<link rel="stylesheet" type="text/css" href="css/About.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		
+		
 	    <script type="text/javascript" src="js/jquery.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	   
+	    <script src="js/jquery.inview.min.js"></script>
+	    <script src="js/jquery.youtube-inview-autoplay.js"></script>
 		
-    	<script src="js/rotation-circle.js"></script>
+    	
+    	
 </head>
 <body>
 	<div class="container-fluid">
@@ -63,36 +67,71 @@
 	    <div class="row">
 	      <div class="col-sm-12">
 	            <div class="videoPage">
-	                <iframe width="100%" height="100%"
-	                  src="https://www.youtube.com/embed/6vopR3ys8Kw" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">
-	                </iframe>
+	                <div class="youtube-video" id="demo-1" data-video-id="6vopR3ys8Kw" width="100%" height="100%"></div>
 	           </div>
 	      </div>
 	    </div>
 	    
+
+</div>
+<!--     
 <div class="content-section-b big-circle-display">	    
 	<div class="container">   
 	    <div class="row">
-        	<div class="col-sm-8">
+        	<div id="mrdni" class="col-sm-8 col-md-8 col-md-offset-2" style="height: 750px;">
 	              <ul class='circle-container'>
-					  <li class='circle-list-item main-member-in-circle' id="c11" style="margin-top: -31px;margin-left: -19px;"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/cats/'></li>
-					  <li class='circle-list-item' id="c1"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/nature'></li>
-					  <li class='circle-list-item' id="c2"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/abstract'></li>
-					  <li class='circle-list-item' id="c3"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/cats'></li>
-					  <li class='circle-list-item' id="c4"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/food'></li>
-					  <li class='circle-list-item' id="c5"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/animals'></li>
-					  <li class='circle-list-item' id="c6"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/business'></li>
-					  <li class='circle-list-item' id="c7"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/people'></li>
-					  <li class='circle-list-item' id="c8"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/people'></li>
-					  <li class='circle-list-item' id="c9"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/people'></li>
-					  <li class='circle-list-item' id="c10"><img class="round-image img-responsive" src='http://lorempixel.com/150/150/people'></li>
+					  <li class='circle-list-item main-member-in-circle' id="c11" style="margin-top: -31px;margin-left: -19px;">
+							<div>
+								
+								<div class="ch-item ch-img-1">
+									<div class="ch-info">
+										<img class="round-image img-responsive" src='Images/girl.jpg'>
+										<h3>Use what you have</h3>
+										<p>by Angela Duncan <a href="http://drbl.in/eOPF">View on Dribbble</a></p>
+									</div>
+								</div>
+							</div>
+							
+					  </li>
+					  <li class='circle-list-item' id="c1">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c2">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c3">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c4">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c5">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c6">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c7">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c8">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c9">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
+					  <li class='circle-list-item' id="c10">
+					  	<img class="round-image img-responsive" src='images/girl.jpg'>
+					  </li>
 				  </ul>
 				  
 				 	<!-- Modal -->
+				 	 <!--  
 					<div class="modal fade" id="myModal" role="dialog">
 					  <div class="modal-dialog">
 					  
 					    <!-- Modal content-->
+					     <!--  
 					    <div class="modal-content">
 					      <div class="modal-header circle-text-modal">
 					        <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -108,10 +147,10 @@
 					    
 					  </div>
 					</div>
-	     	
-	
+
+
 	  			  <!-- bio for every one -->
-	  			
+	  			<!-- 
 	              <div style="display:none" class="c1">
 						<h2>Jixian Wang</h2>
 						<p>Jixian Wang is the CEO and Co-founder of Openbiz Technology. The Shangdi – Jade Emperor of our small developer community goes beyond an elementary implementation engagement, using the experience gained through the successful delivery execution of large-scale projects, as well as, smaller, open source projects, to recommend and implement the solutions that position you to achieve your business goals.</p>
@@ -190,22 +229,17 @@
 						<p>Marija added to her skills taking a course in 2D Animation as a CG Artist, Matte Painter/Environment Artist. As translator, journalist and assistant to Editor in Chief in Media Print Macedonia she mastered specialized translations, writing articles, photo storing and archiving, web support and proofreading.</p>
 				  </div>
 				</div>
-		     	<div class="col-sm-4">
-		     		<div class='team-member-biografy'>
-		           		<h2>Marija Bozinovska - director</h2>
-						<p>Marija Bozinovska aka the Master Compiler within the ShadowGrid project is responsible for all aspects related to the copy and web content at Openbiz Technology. Marija oversees the proofreading, social media promotion activities and part of the public relations tasks. Her duties also cover search engine optimization strategies and consumer report analysis.</p>
-						<p>Proficient both in French and English, and knowledgeable in Romanian, Serbian and Bulgarian she gained experience in communicating and writing, tutoring, translating, interpreting, logistics, organization, management, online promotion.</p>
-						<p>Marija added to her skills taking a course in 2D Animation as a CG Artist, Matte Painter/Environment Artist. As translator, journalist and assistant to Editor in Chief in Media Print Macedonia she mastered specialized translations, writing articles, photo storing and archiving, web support and proofreading.</p>
-		    		</div>
-		    	</div>
+					
+		     	
+		      
 	     </div>
 	</div>   
 </div>  
 
-
-
+ -->
+<!--  
  <div class="container horisontal-circles">
-  <h3>Inline List</h3>
+  <h1>Our Team</h1>
   <div class="row">
 	  <div class="col-sm-12">
 		  <ul class="list-inline text-center">
@@ -303,73 +337,220 @@
 	</div>
  </div>
  
+ -->
  
- 
-	     <section id="second" class="team  bg-grey">
-		     <div class="container">
-	  			<div class="row">
-	    			<div class="col-sm-5">
-	      				<span class="glyphicon glyphicon-globe logo slideanim"></span>
-	    			</div>
-	    			<div class="col-sm-7">
-	      				<h2>Our Values</h2><br>
-	      				<h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-	      				<p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	      				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	    			</div>
-	  			</div>
+	<section class="container" id="team">
+		<div class="page-header text-center">
+        	<h2>
+        		Meet Our Team
+        		<small>We are all about technology</small>
+        	</h2>
+		</div>
+
+			<!-- First Row of Speakers -->
+			<div class=" row">
+					<div class="col-sm-4 col-md-3">
+						<div class="team-member">
+							<div id="circle" class="ec-circle">
+							<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+							<h3>Hovered</h3>
+							</div>
+							<div class="social-buttons">
+	            				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+	            				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+	            				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="team-member">
+							<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+							<div class="social-buttons">
+	              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+	              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+	              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="team-member">
+							<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+							<div class="social-buttons">
+	              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+	              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+	              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="team-member">
+							<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+							<div class="social-buttons">
+	              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+	              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+	              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="row2">
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-member">
+								<img class="thumb img-circle img-responsive" src="images/girl.jpg" alt="James Lewis"/>
+								<div class="social-buttons">
+		              				<a href="#" class="social-btn sb-facebook sb-sm"><i class="fa fa-facebook"></i></a>
+		              				<a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+		              				<a href="#" class="social-btn sb-linkedin sb-sm"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+				</div>
 			</div>
-	     </section>
+			<div class="clear"></div>
+			
+			<!-- View All Button -->
+			<div class="col-md-12">
+				<button class="btn btn-custom btn-transparent fadeIn">View All</button>
+			</div>
+	</section>				
+				
+
 	     
-	     <section id="third" class="team">
-	     	<div class="container">
-				<div class="featurette" id="services">
-		            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-		            <h2 class="featurette-heading">The Second Heading
-		                <span class="text-muted">Is Pretty Cool Too.</span>
-		            </h2>
-		            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-		        </div>
-		        </div>
-	     </section>
-	     
-	     <div class="content-section-b">
-        	<div class="container">
-            	<div class="row">
-	                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-	                    <hr class="section-heading-spacer">
-	                    <div class="clearfix"></div>
-	                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-	                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
-	                </div>
-	                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-	                    <img class="img-responsive" src="Images/dog.png" alt="">
-	                </div>
-            	</div>
-        	</div>
-    	</div>
-    	
-    	<div class="content-section-a">
-        	<div class="container">
-            	<div class="row">
-	                <div class="col-lg-5 col-sm-6">
-	                    <hr class="section-heading-spacer">
-	                    <div class="clearfix"></div>
-	                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-	                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
-	                </div>
-	                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-	                    <img class="img-responsive" src="Images/ipad.png" alt="">
-	                </div>
-            	</div>
-        	</div>
-    	</div>
-    
-    
 	     
 		 <footer class="footer-distributed">
 			<div class="footer-left">
-				<h3><span class="slikaLogo"><img  src="Images/shadowgrid.png" /></span></h3>
+				<h3><span class="slikaLogo"><img  src="images/shadowgrid.png" /></span></h3>
 				<p class="footer-links">
 					<a href="Home.html">Home</a>
                     ·
@@ -396,7 +577,33 @@
 		</footer>
 	</div><!-- /.container-fluid-end -->
 	
+<script type="text/javascript">
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+  function onYouTubeIframeAPIReady() {
+    $('.youtube-video').inViewAutoplay({
+      autohide: 1,
+      modestbranding: 1,
+      rel: 0,
+      quality: 'hd720'
+    });
+  }
+</script>
+
+
+	<!-- jQuery Code for the View All Button -->
+	<script>
+		$(document).ready(function(){
+		  $(".fadeIn").click(function(){
+			$("div.row2").fadeIn();
+			$("button.fadeIn").hide();
+		  });
+		});
+	</script>
 
    
 </body>

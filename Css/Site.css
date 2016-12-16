@@ -6,398 +6,31 @@ body {
   font-family: 'Lato'!important;
 }
 
-.stopfade { 
-   opacity: .5;
-}
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:50%;
-  margin-top: 30px;
-  margin-left:-5em;
-  background:black;
-  width:10em;
-  height:10em;
-  padding:4em 2em;
-  border-radius:50%;
-  font-size:0.5em;
-  display:block;
-  box-shadow:0px 0px 5px 0px #333;
+@-webkit-keyframes arrows {
+  0% { top:0; }
+  10% { top:12%; }
+  20% { top:0; }
+  30% { top:12%; }
+  40% { top:-12%; }
+  50% { top:12%; }
+  60% { top:0; }
+  70% { top:12%; }
+  80% { top:-12%; }
+  90% { top:12%; }
+  100% { top:0; }
 }
-
-.arrow {
-  float:left;
-  position:relative;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #ffffff transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
-}
-
-.arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #111 transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
-}
-
-
-.hint {
-  position:absolute;
-  top:0.6em;
-  width:100%;
-  left:0;
-  font-size:2em;
-  font-style:italic;
-  text-align:center;
-  color:#fff;
-  opacity:0;
-}
-
-
-.arrow-wrap:hover .hint {
-  opacity:1;
-}
-
-
-  @-webkit-keyframes arrows {
-    0% { top:0; }
-    10% { top:12%; }
-    20% { top:0; }
-    30% { top:12%; }
-    40% { top:-12%; }
-    50% { top:12%; }
-    60% { top:0; }
-    70% { top:12%; }
-    80% { top:-12%; }
-    90% { top:12%; }
-    100% { top:0; }
-  }
-  
-  .arrow-wrap .arrow {
-    -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-iteration-count: infinite;
-  }
-
-  hr{
-  border:0.5px solid #002832;
-}
-
 .clearfix h3{
   text-align: center;
 }
-
-.latobold{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-}
-.latolight{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 2.1em;
-  margin-bottom: 5%;
-  color: white;
-}
-
-#Home{
-  padding-top: 7%;
-  padding-bottom: 7%;
-  margin-top: 100px;
-  text-align: center;
-  border-bottom: 1px solid #cdd0d7;
-  z-index: 20;
-  height: 100%;
-  width: auto;
-}
-
-#render2 img{
-  position: relative;
-  width: 60%;
-  height: 60%;
-  z-index: -1000;
-}
-
-#soon{
-  
-  padding-bottom: 2%;
-  text-align: center;
-  font-weight:100; 
-  color: white;
-  font-size: 1.2rem;
-  font-size: 22px;
-}
-#soon p{
-  position: relative;
-  height: 100%;
-  width:100%;
-}
-
-#comming{
-  margin-left: 5px;
-  margin-top: -4%;
-
-}
-#readmore{
-  text-align: center;
-  color:white;
-  font-size: 0.7em;
-  margin-left: 5px;
-}
-
-
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-top: 0;
-  letter-spacing: .3rem;
-  
-}
-#comming button{
-  background-color: #00597e;
-  border:none;
-}
-#comming button:hover{
-  background-color: #00597e;
-  border:none;
-}
-#comming a {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  padding: .4rem;
-  transition: .6s background; 
-}
-#comming a:hover{
-  text-decoration: none;
-  color:black;
-  box-shadow: none;
-}
-#comming a:active{
-  text-decoration: none;
-  color:black;
-}
-#comming a:focus{
-  text-decoration: none;
-  color:black;
-}
-
 .animated{
   animation-delay: 0s;
 }
-
-.pozicija{
-  margin-top: -100%!important;
-}
-
-.Blackbox{
-  margin-top: 47px;
-  text-align: center;
-  color:white;
-  text-decoration: none;
-  border-bottom: 1px solid white;
-
-}
-.Blackbox > h5{
-  text-align: center;
-  margin-top:5%;
-  margin-bottom: -8%;
-  font-size: 50px;
-  font-weight: 400;
-  height:80px;
-}
-
-
-.Blackbox img{
-  height: 100%;
-  width: 100%;
-  z-index: -100;
-  position: relative;
-}
-
-.Blackbox > p{
-  margin-left: 14%;
-  margin-top: -18%;
-  font-size: 20px;
-  margin-bottom: 5%;
-  width:70%;
-}
-
-.zafeatures{
-  text-align: center;
-}
-
-.newpage{
-  text-align: center;
-  width:100%;
-  margin-top: -5.25%;
-}
-
-.newpage a{
-  text-align: center;
-  background-color: none;
-  margin-bottom: 0px;
-  width:25px;
-}
-.newpage1{
-  text-align: center;
-  width:100%;
-  margin-bottom: 1%;
-}
-
-.newpage1 a{
-  text-align: center;
-  background-color: none;
-  margin-bottom: 0px;
-  width:25px;
-}
-
-.plus img{
-  height:25px;
-  width:25px;
-  margin-bottom: 30px;
-  color: white;
-  font-size: 2em;
-  text-decoration: none;
-  transition: all .2s ease-in-out;
-}
-.plus:active{
-  text-decoration: none;
-}
-.plus:focus{
-  text-decoration: none;
-}
-.plus:hover{
-  text-decoration: none;
-}
-
-#demo{
-  position: relative; /*dodadeno*/
-  padding-top: 10px; /*izmeneto*/
-  height: 100%;
-  width: 100%;
-  background-color: #00597e;
-  color: white;
-  z-index: -1; /*dodadeno*/
-  
-}
-.naslovce{
-  text-align: center;
-  color: white;
-}
-
-#makecustom{
-  background-color: black ;
-  color: #00354b;
-  margin-top: 60px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 10%;
-}
-#makecustom h1{
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-#makecustom2{
-  text-align: center;
-  margin-top: 30px;
-  display: inline-block;
-}
-#malcedole{
-  margin-top: 150px;
-}
-
-#demo1{
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-  background-color: black ;
-  color: #00354b;
-  padding-bottom: 80px;
-  width:100%;
-}
-
-.zafeatures1{
-  text-align: center;
-}
-
-#demo2{
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-  background-color: black ;
-  color: #00354b;
-  padding-bottom: 80px;
-  width:100%;
-}
-#demo3{
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-  background-color: black ;
-  color: #00354b;
-  padding-bottom: 80px;
-  width:100%;
-}
-
-#volevo{
-  margin-left: 30px;
-}
-
-.itsflexible{
-  position: relative;
-}
-#Traveltime{
-  text-align: center;
-  background-color: black ;
-  color: #00354b;
-  margin-top: 60px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  height: 50%;
-  width:100%;
-  border-bottom: 1px solid #00354b;
-}
-#Traveltime2{
-  text-align: center;
-  background-color: black ;
-  color: #00354b;
-  padding-top: 20px;
-  height: 50%;
-  width:100%;
-  border-bottom: 1px solid #00354b;
-}
-#makecustom3 h1{
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#makecustom3{
-  text-align: center;
-  margin-top: 30px;
-  display: inline-block;
-  padding-bottom: 1%;
-
-}
-#malcedole2{
-  margin-top: 30px;
-}
-
+/* footer */
 footer{
   position: relative;
   bottom: 0;
@@ -412,7 +45,7 @@ footer{
 /* od css za footer-distributed */
 .footer-distributed{
   position: relative;
-  background-color: #002832;
+  background-color: #060606;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -478,7 +111,7 @@ footer{
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #002832;
+  background-color:  #060606;
   color: white;
   font-size: 25px;
   width: 38px;
@@ -514,69 +147,10 @@ footer{
   text-decoration: none;;
 }
 .slikaLogo img{
-        
-        height:50%;
-        width: 30%;
-        margin-top: 12px;
-      }
-
-/* style for contact us page */
-.send-email-info-message {
-    margin-top: 200px !important;
-    margin-bottom: 196px !important;
-    margin-left: 68px !important;
-    color: white!important;
+  height:50%;
+  width: 30%;
+  margin-top: 12px;
 }
-
-.fs-numbers {
-	display: none;
-}
-
-/* Footer Right */
-/*
-.footer-distributed .footer-right{
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-  line-height: 20px;
-  color:  #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-  display: block;
-  color:  #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-*/
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
 
   .footer-distributed{
@@ -597,17 +171,23 @@ footer{
   }
 
 }
+/* style for contact us page */
+.send-email-info-message {
+    margin-top: 200px !important;
+    margin-bottom: 196px !important;
+    margin-left: 68px !important;
+    color: white!important;
+}
 
+.fs-numbers {
+  
+}
 /* Navbar */
 a.navbar-brand {
     color: hsl(0, 0%, 100%) !important;
     font-size: 20px;
     letter-spacing: 0.5px;
 }
-
-
-/* Navbar */
-
 .navbar-brand img{
             float: left;
             height: 200%;
@@ -619,10 +199,8 @@ a.navbar-brand {
         font-weight: 300;
         font-size: 18px;
         border-width: 0px;
-        -webkit-box-shadow: 0 5px 5px hsl(0, 0%, 53.3%);
-        -moz-box-shadow: 0 5px 5px hsl(0, 0%, 53.3%);
-        box-shadow: 0 2px 5px white  ;
-    }
+		opacity: 0.7;
+      }
 
     .navbar-nav {
         width: 100%;
@@ -715,110 +293,217 @@ a.navbar-brand {
     .arrow-wrap{
       visibility: hidden;
     }
+    .info{
+      height: 100%!important;
+    }
 }
+/* do ovde navbar */
 
-
-
-section {
-  height: 100%;
-}
-#dot-nav{    
-  right: 10px!important;
-  top: 50%!important;
-  margin-top: -50px!important;
-  height: 100px!important;
-  z-index: 999!important;
-}
-
-#dot-nav ul {
-  list-style: none;
-  margin:0;
-  padding: 0;
-}
-#dot-nav li {
-  position: relative!important;
-  background-color: #00354b;
-  border:3px solid #00354b;
-  border-radius: 15px 15px 15px 15px;
-  cursor: pointer;
-  padding: 5px;
-  height: 10px;
-  margin: 10px 10px 0px 0px;
-  width: 10px;
-  vertical-align:bottom;
-}
-#dot-nav li.active, #dot-nav li:hover {
-  background-color: #00354b;
-}
-
-#dot-nav a {
-  outline: 0;
-  vertical-align:top;
-  margin: 0px 0px 0px 25px;
+/* delot za kopceto na home */
+#comming{
   position: relative;
-  top:-5px;
+  text-align:center;
+  height:30vh;
+  padding: 5%;
 }
-.awesome-tooltip + .tooltip > .tooltip-inner {
-    background-color: #00354b; 
-    color: white; 
-    border: 1px solid #00354b; 
+#comming h2{
+  font-size:1.7em;
 }
-.awesome-tooltip + .tooltip.left > .tooltip-arrow{
-    top:50%;
-    right:0;
-    margin-top:-5px;
-    border-top:5px solid transparent;
-    border-bottom:5px solid transparent;
-    border-left:5px solid white;
+#comming button{
+  background-color: transparent;
+  border-width:1px;
+  border-color:white;
+}
+#comming button:hover{
+  background-color: rgb(50, 53, 53);
+  border-color:rgb(50, 53, 53);
+}
+#comming a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: .4rem;
+  transition: .6s background; 
+}
+#comming a:hover{
+  color:white;
+  box-shadow: none;
+}
+#comming a:active{
+  color:#eee;
+}
+#comming a:focus{
+  color:#eee;
 }
 
-@media screen and (max-width: 767px) {
-  #dot-nav{    
-  visibility: hidden;
+/* style za carousel-ot na home */
+
+a { outline:0;
+  transition:all .5s linear;
+  -webkit-transition:all .5s linear;
+  -moz-transition:all .5s linear;
+  text-decoration:none;
 }
+.carousel-inner{
+  text-align: center;
+  height: 70vh;
+  width: 100%;
 }
-
-
-/* novo */ 
-
-#ttt{
-  background-color: #00354b;
-  position: relative;
-  padding-top: 20px;
+.carousel-inner img{
   height: 100%;
   width: 100%;
-  color: white;
-  z-index: 10000;
+  margin-top: -10%;
+}
+@media screen and (max-width: 1200px){
+  .carousel-inner img{
+    margin-top: 0;
+  }
+  #comming h2{
+  font-size:1.4em;
+}
+}
+.rel {
+  position:relative;
+}
+.top {
+  padding:0 !important;
+}
+.carousel-indicators li {
+  background-color:#ccc;
+  bottom:40px;
+}
+.carousel-indicators .active {
+  background-color:#333;
+}
+/* do ovde od style.css */
+
+
+
+
+/* tekstovite na sliderot vo home */
+.home1 {
+  margin-top: 50px;
+  background: url('../images/render 2.jpg') no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
 }
 
-#howitworks{
-  position: relative;
-  padding-top: 20px;
-  height: 100%;
+.home2, .home3, .home4 {
+  margin-top: 50px;
+  background: url('../images/img_0355.jpg') no-repeat center;
+  background-size: 100% 100%;
   width: 100%;
-  background-color: #00354b;
-  color: white;
-  width:100%;
-  z-index: 10000;
+  height: 100%;
 }
 
-#rboe{
-  position: relative;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: -25px;
+.text-up {
   height: 100%;
-  width: 100%;
-  background-color: #00354b;
-  color: white;
-  z-index: 10000;
+  padding-top: 100px;
+  animation-delay: 1s;
 }
 
-#hbc{  
-  background-color: black;
+.text-down {
   height: 100%;
-  width: 100%;
-  color: white;
-  z-index: 10000;
+  padding-top: 350px;
+  animation-delay: 2.5s;
 }
+
+.text-up h1 {
+  color: white;
+}
+
+#zaMali {
+  color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-up, .text-down {
+    font-size: 20px;
+  }
+  .text-up h3, .text-down h3 {
+    font-size: 30px;
+  }
+  .text-up h1 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+  #zaMali {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .carousel-inner > .row > .col-md-6 {
+    width: 50%;
+    height: 50%;
+  }
+  .text-down {
+    float: right;
+    padding-top: 0px;
+  }
+  .text-up h1 {
+    padding-top: 10px;
+  }
+  #zaMali {
+    padding-top: 0px;
+  }
+}
+
+/* kraj na tekstovite na sliderot vo home */
+
+.row {
+  margin: 0;
+}
+
+/* buttons za software i hardware */
+
+.slika{
+ text-align: center;
+}
+.slika h4,h5,h6{
+ margin-top: 3%;
+ color: #eee;
+}
+.slika img{
+ 
+ max-height: 300px;
+ max-width: 300px;
+}
+.nothing{
+ text-decoration: none;
+}
+.nothing:hover{
+ text-decoration: none;
+}
+.nothing:active{
+ text-decoration: none;
+}
+.info{
+ height: 30vh;
+}
+
+@media screen and (max-width: 991px) {
+  .info{
+    height: 100%!important;
+  }
+}
+
+/* kraj na buttons za software i hardware */
+
+/* krienje na tekstovite na sliderot na mali ekrani */
+
+@media screen and (max-width: 412px) {
+  .carousel-inner p {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .carousel-inner p {
+    visibility: hidden;
+  }
+}
+
+/* kraj na krienje na tekstovite na sliderot na mali ekrani */

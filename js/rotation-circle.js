@@ -12,36 +12,36 @@ $(document).ready(function() {
     function checkSize(){
     	if (Modernizr.mq("screen and (min-width:992px)") && Modernizr.mq("screen and (max-width:1199px)")) {
             //Implement jQuery/JS to handle a larger screen (i.e. Laptops/Desktops). In my case adding/removing a class to show/hide elements
-    		radius = '14em';
+    		radius = '12em';
     		console.log(radius);
-    		$('li#c1 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c2 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c3 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c4 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c5 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c6 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c7 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c8 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c9 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c10 img').attr("src", "http://lorempixel.com/100/100/nature");
-    		$('li#c11 img').attr("src", "http://lorempixel.com/150/150/nature");
+    		$('li#c1 img').attr("src", "images/girl100.jpg");
+    		$('li#c2 img').attr("src", "images/girl100.jpg");
+    		$('li#c3 img').attr("src", "images/girl100.jpg");
+    		$('li#c4 img').attr("src", "images/girl100.jpg");
+    		$('li#c5 img').attr("src", "images/girl100.jpg");
+    		$('li#c6 img').attr("src", "images/girl100.jpg");
+    		$('li#c7 img').attr("src", "images/girl100.jpg");
+    		$('li#c8 img').attr("src", "images/girl100.jpg");
+    		$('li#c9 img').attr("src", "images/girl100.jpg");
+    		$('li#c10 img').attr("src", "images/girl100.jpg");
+    		$('li#c11 img').attr("src", "images/girl150.jpg");
     		
     		$('li.main-member-in-circle').css({"margin-top":"-37px", "margin-left":"-22px"});
     		
         } else if (Modernizr.mq("screen and (min-width:1200px)")) {
-        	radius = '17em';
+        	radius = '18em';
         	console.log('creen and (min-width:1200px)' +  radius);
-        	$('li#c1 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c2 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c3 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c4 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c5 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c6 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c7 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c8 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c9 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c10 img').attr("src", "http://lorempixel.com/150/150/nature");
-    		$('li#c11 img').attr("src", "http://lorempixel.com/150/150/nature");
+        	$('li#c1 img').attr("src", "images/girl150.jpg");
+    		$('li#c2 img').attr("src", "images/girl150.jpg");
+    		$('li#c3 img').attr("src", "images/girl150.jpg");
+    		$('li#c4 img').attr("src", "images/girl150.jpg");
+    		$('li#c5 img').attr("src", "images/girl150.jpg");
+    		$('li#c6 img').attr("src", "images/girl150.jpg");
+    		$('li#c7 img').attr("src", "images/girl150.jpg");
+    		$('li#c8 img').attr("src", "images/girl150.jpg");
+    		$('li#c9 img').attr("src", "images/girl150.jpg");
+    		$('li#c10 img').attr("src", "images/girl150.jpg");
+    		$('li#c11 img').attr("src", "images/girl150.jpg");
     		
     		$('li.main-member-in-circle').css({"margin-top":"-4px", "margin-left":"-1px"});
         }
@@ -77,6 +77,7 @@ $(document).ready(function() {
 	    var showElementId = this.id;
 	    $(".team-member-biografy").html($("." + showElementId).html());
 	    //if we want to show text in modal dialog then this is the code for that
+	    
 	    $('#myModal').modal({
 	        show: 'true'
 	    }); 

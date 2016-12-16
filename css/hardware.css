@@ -1,0 +1,130 @@
+body {
+
+    background-image: url('../images/inside part blackbox.jpg')!important;
+    background-position: 50%!important;
+    background-size: 50%!important;
+    background-repeat: no-repeat!important;
+    background-attachment: fixed!important;
+}
+
+#soon{
+  margin-top: 41%;
+  padding-right: 5%;
+  text-align: right;
+  color: white;
+  font-size: 1.2rem;
+  font-size: 22px;
+}
+.latolight{
+  font-weight: 100!important;
+}
+.latobold{
+
+  font-weight: 300!important;
+}
+#visina{
+  height: 75vh;
+}
+
+@media (max-height:767px){
+  #visina{
+  height: 10vh;
+}
+}
+
+footer{
+  position:absolute;
+   bottom:0px;
+   width:100%;
+   z-index: 10;
+}
+
+
+@media (min-height:800px){
+  footer{
+  position:relative;
+   top: 0;
+   bottom:0;
+   width:100%;
+   z-index: 10;
+}
+}
+
+/*  technology deloooooot */
+
+.golemoh5{
+  font-size: 3em;
+  color:white;
+  width:100%;
+  text-align: center;
+  margin:0 auto;
+  top:10% !important;
+  position: absolute;
+}
+.tech-levo{
+  text-align: right;
+  left:5%;
+}
+.tech-desno{
+  text-align: left;
+  right:5%;
+}
+.hbc{  
+  background-color: transparent;
+  color: white;
+  z-index: 10000;
+  text-decoration: none!important;
+}
+.hbc:focus, .hbc:active, .hbc:hover {
+  color:grey;
+}
+.hbc h2{
+  padding:45px 0;
+}
+#hbc1, #hbc2, #hbc3, #hbc4{
+  margin-top: 20px;
+  position: relative;
+  font-size: 1.8em;
+  color: #eee;
+}
+/* tech-specs deloooooooooooooot */
+hr{
+  border:0.5px solid #002832;
+}
+
+.techSpecs{
+  margin:0 30px;
+}
+.mvtop{
+  color:white;
+  padding:10px 0;
+}
+.smtop{
+  color:azure;
+}
+
+#ts1,#ts2,#ts3,#ts4,#ts5,#ts6,#ts7,#ts8{
+  position: relative;
+}
+
+
+@media (max-width: 768px){
+  .tech-desno{
+  text-align: center !important;
+  right: 0;
+
+}
+.tech-levo {
+  text-align: center !important;
+  left: 0;
+
+}
+hr{
+  width: 50%;
+}
+}
+@media (min-width: 768px){
+.naslovcinja{
+
+}
+}
